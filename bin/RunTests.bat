@@ -41,3 +41,5 @@ Flipbyte.exe
 Flipbyte.exe str
 Flipbyte.exe 1234
 Flipbyte.exe -1
+
+pause

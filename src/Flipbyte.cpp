@@ -53,13 +53,15 @@ int _tmain(int argc, _TCHAR* argv[])
 			printf("%d\n", FlipNumber(ParseNumberStr(argv[1])));
 			return 0;
 		}
-		catch (std::invalid_argument e)
+		catch (std::invalid_argument const& e)
 		{
+			(void)e;
 			puts("Incorrect input byte format");
 			return 1;
 		}
-		catch (std::out_of_range e)
+		catch (std::out_of_range const& e)
 		{
+			(void)e;
 			puts("Input byte is out of range");
 			return 2;
 		}
